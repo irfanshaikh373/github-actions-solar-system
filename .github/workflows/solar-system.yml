@@ -173,12 +173,12 @@ jobs:
           uses: actions/checkout@v4
         
         - name: Install kubectl CLI
-          uses: azure/setup-kubectl@v3
+          uses: azure/setup-kubectl@v4
           with:
             version: 'v1.26.0'
 
         - name: Set Kubeconfig file
-          uses: azure/k8s-set-context@v3
+          uses: azure/k8s-set-context@v4
           with:
             method: kubeconfig
             kubeconfig: ${{ secrets.KUBECONFIG }}
