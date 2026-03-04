@@ -59,7 +59,7 @@ jobs:
           uses: actions/upload-artifact@v4
           with:
             name: Mocha-Test-Result-1
-            path: test-results.xml
+            path: test-results-1.xml
 
     code-coverage:
         name: Code Coverage
