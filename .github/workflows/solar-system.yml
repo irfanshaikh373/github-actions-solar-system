@@ -183,7 +183,7 @@ jobs:
             method: kubeconfig
             kubeconfig: ${{ secrets.KUBECONFIG }}
 
-        - name: Fetch Kubernetes Cluster Details
+        - name: Fetch Minikube Kubernetes Cluster Details
           run: |
             kubectl version --short
             echo ---------------------------------------------------
